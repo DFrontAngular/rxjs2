@@ -1,0 +1,187 @@
+<p>observables works!</p>
+
+<h1>
+    Map
+</h1>
+<p>
+    Nos permite transformar o extraer lo que emite el observable en algo diferente, manteniendo la estructura del flujo original. map es uno de los operadores más comunes y poderosos en RxJS, y se utiliza ampliamente para realizar transformaciones en los datos emitidos por un observable.
+</p>
+<p>Ejemplo</p>
+<button class="btn btn-primary" (click)="mostrarDatosMap()">Boton Map</button>
+
+
+
+
+
+<br>
+
+<h1>
+    Filter
+</h1>
+<p>
+    El operador filter es una función de filtrado que se utiliza para emitir solo aquellos elementos de un flujo de datos observable que cumplan con una condición especificada. En otras palabras, filter permite seleccionar elementos de un observable que satisfagan una condición dada y descartar aquellos que no la cumplan.
+</p>
+<p>Ejemplo</p>
+<button class="btn btn-primary" (click)="mostrarDatosFilter()">Boton</button>
+
+
+<br>
+
+<h1>
+    Tap
+</h1>
+<p>
+    El operador tap es un operador de utilidad que permite realizar acciones secundarias o efectos secundarios en los elementos que fluyen a través de un flujo de datos observable, sin afectar la emisión o transformación de los elementos en sí. Es una herramienta poderosa para depurar, registrar o ejecutar lógica adicional en un flujo de datos observable sin modificar su comportamiento.
+</p>
+
+<p>Ejemplo</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosTap()">Boton</button>
+
+<br>
+
+<h1>
+    Reduce
+</h1>
+<p>
+    El operador reduce es un operador de transformación que permite reducir una secuencia de valores en un solo valor, Este operador recibe una función de acumulación como argumento y aplica dicha función a los valores emitidos por la secuencia de entrada.
+
+    La función de acumulación toma dos argumentos: el acumulador y el valor actual emitido por la secuencia de entrada. El acumulador es el valor acumulado hasta el momento, mientras que el valor actual es el valor emitido por la secuencia en ese instante. La función de acumulación debe devolver un valor que se usará como el nuevo valor del acumulador.
+</p>
+
+<br>
+
+<h1>
+    Scan
+</h1>
+<p>
+    El operador scan es un operador de transformación que es similar al operador reduce, pero en lugar de emitir un solo valor al final de la secuencia, emite un valor acumulado en cada paso de la secuencia.
+
+    La función de acumulación utilizada en scan es similar a la utilizada en reduce ya que toma dos argumentos: el acumulador y el valor actual emitido por la secuencia de entrada. La diferencia es que la función de acumulación devuelve el valor acumulado en lugar de devolver el valor que se usará como el nuevo valor de acumulador.
+</p>
+<p>ejemplo</p>
+<button class="btn btn-primary" (click)="mostrarDatosScan()">Boton</button>
+
+<br>
+
+<h1>
+    Take
+</h1>
+<p>
+    El operador take permite emitir los primero n valores emitidos por la secuencia de entrada. Una vez que se han emitido n valores, la secuencia se completa automáticamente y se detiene.
+</p>
+
+<br>
+
+<h1>
+    Merge
+</h1>
+<p>
+    Merge es un operador de combinación que combina dos o más Observables en uno solo y no introduce ningún tipo de modificación o alteración en el orden temporal en que los valores de cada uno de los Observables fueron emitidos.
+</p>
+<p>ejemplo</p>
+<button class="btn btn-primary" (click)="mostrarDatosMerge()">Boton</button>
+<br>
+<h1>
+    Concat
+</h1>
+<p>
+    Concat es otro operador de combinación, pero a diferencia de merge, que combina los valores en el mismo orden que fueron emitidos, concat espera a que el primer Observable emita su complete 
+</p>
+
+
+<p>Ejemplo</p>
+mostrarDatosConcat
+<button class="btn btn-primary" (click)="mostrarDatosConcat()">Boton</button>
+
+<br>
+<h1>
+    CombineLatest
+</h1>
+<p>
+    CombineLatest es otro operador de combinación y que combina los valores emitidos por los distintos Observables, suscribiéndose a los distintos observables al mismo tiempo y devolviendo todos sus valores agrupados por el último valor de cada uno de los Observables
+</p>
+
+<br>
+<h1>
+    MergeAll
+</h1>
+<p>
+    MergeAll es un operador que permite aplanar Observables de Observables, utilizando el mismo criterio que merge, es decir, sin alterar el orden temporal en el que los valores fueron emitidos
+</p>
+
+<br>
+<h1>
+    SwitchMap
+</h1>
+<p>
+    De la misma forma que mergeMap es la combinación de map + mergeAll, SwitchMap es la combinación de un map + switch. La particularidad que tiene Switch es que cancelará la subscripción del primer Observable cuando detecta que el segundo Observable comienza a emitir valores por lo que es un operador muy útil cuando nos queremos asegurar de no hacer "pooling"
+</p>
+
+<br>
+<h1>
+    ExhausMap
+</h1>
+<p>
+    (explicarlo junto al swichMap)
+</p>
+
+<br>
+
+<h1>
+    ConcatMap
+</h1>
+<p>
+    (explicarlo junto al swichMap)
+</p>
+
+<br>
+
+<h1>
+    From
+</h1>
+<p>
+explicacion
+</p>
+<p>Ejemplo</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosFrom()">Boton</button>
+<br>
+
+<h1>
+    Of
+</h1>
+<p>
+ explicacion
+</p>
+<p>Ejemplo</p>
+<button class="btn btn-primary" (click)="mostrarDatosOf()">Boton</button>
+
+<br>
+
+<h1>
+    TakeUntil
+</h1>
+<p>
+ explicacion
+</p>
+
+<br>
+
+<h1>
+    TakeUntilDestroyed
+</h1>
+<p>
+ explicacion
+</p>
+
+<br>
+
+<h1>
+    catchError
+</h1>
+<p>
+explicacion
+</p>
+
+<br>
