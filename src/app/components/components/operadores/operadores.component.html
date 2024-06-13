@@ -1,1 +1,77 @@
-<p>operadores works!</p>
+<h3>
+  Map
+</h3>
+
+<p>
+  Nos permite transformar o extraer lo que emite el observable en algo diferente, manteniendo la estructura del flujo original. map es uno de los operadores más comunes y poderosos en RxJS, y se utiliza ampliamente para realizar transformaciones en los datos emitidos por un observable.
+</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosMap()">Ejemplo</button>
+
+
+
+
+
+<br>
+
+<h3>
+  Filter
+</h3>
+
+<p>
+  El operador filter es una función de filtrado que se utiliza para emitir solo aquellos elementos de un flujo de datos observable que cumplan con una condición especificada. En otras palabras, filter permite seleccionar elementos de un observable que satisfagan una condición dada y descartar aquellos que no la cumplan.
+</p>
+<button class="btn btn-primary" (click)="mostrarDatosFilter()">Ejemplo</button>
+
+
+<br>
+
+<h3>
+  Tap
+</h3>
+
+<p>
+  El operador tap es un operador de utilidad que permite realizar acciones secundarias o efectos secundarios en los elementos que fluyen a través de un flujo de datos observable, sin afectar la emisión o transformación de los elementos en sí. Es una herramienta poderosa para depurar, registrar o ejecutar lógica adicional en un flujo de datos observable sin modificar su comportamiento.
+</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosTap()">Ejemplo</button>
+
+<br>
+
+<h3>
+  Reduce
+</h3>
+
+<p>
+  El operador reduce es un operador de transformación que permite reducir una secuencia de valores en un solo valor, Este operador recibe una función de acumulación como argumento y aplica dicha función a los valores emitidos por la secuencia de entrada.
+
+  La función de acumulación toma dos argumentos: el acumulador y el valor actual emitido por la secuencia de entrada. El acumulador es el valor acumulado hasta el momento, mientras que el valor actual es el valor emitido por la secuencia en ese instante. La función de acumulación debe devolver un valor que se usará como el nuevo valor del acumulador.
+</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosReduce()">Ejemplo</button>
+
+<br>
+
+<h3>
+  Scan
+</h3>
+<p>
+  El operador scan es un operador de transformación que es similar al operador reduce, pero en lugar de emitir un solo valor al final de la secuencia, emite un valor acumulado en cada paso de la secuencia.
+
+  La función de acumulación utilizada en scan es similar a la utilizada en reduce ya que toma dos argumentos: el acumulador y el valor actual emitido por la secuencia de entrada. La diferencia es que la función de acumulación devuelve el valor acumulado en lugar de devolver el valor que se usará como el nuevo valor de acumulador.
+</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosScan()">Ejemplo</button>
+
+<br>
+
+<h3>
+  Take
+</h3>
+<p>
+  El operador take permite emitir los primero n valores emitidos por la secuencia de entrada. Una vez que se han emitido n valores, la secuencia se completa automáticamente y se detiene.
+</p>
+
+<button class="btn btn-primary" (click)="mostrarDatosTake()">Ejemplo</button>
+
+<br>
